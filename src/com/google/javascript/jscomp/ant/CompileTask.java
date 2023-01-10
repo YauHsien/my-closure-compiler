@@ -203,6 +203,8 @@ public final class CompileTask
       this.compilationLevel = CompilationLevel.ADVANCED_OPTIMIZATIONS;
     } else if (Ascii.equalsIgnoreCase("whitespace", value)) {
       this.compilationLevel = CompilationLevel.WHITESPACE_ONLY;
+    } else if (Ascii.equalsIgnoreCase("bundle", value)) {
+      this.compilationLevel = CompilationLevel.BUNDLE;
     } else {
       throw new BuildException(
           "Unrecognized 'compilation' option value (" + value + ")");
